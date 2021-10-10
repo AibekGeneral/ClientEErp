@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Стол: 2"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17ssp"
+            android:background="@drawable/rounded_bg_red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/korinbei"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/meal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nothingshet"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_22ssp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/proscan"
+            android:textColor="@color/gray"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relll">
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"> -->
+        <ListView
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/schet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@null"
+            android:dividerHeight="2dp"
+            android:id="@+id/list_shet"/>
+        <!--
+    </LinearLayout>  -->
+
+        <RelativeLayout
+            android:id="@+id/schet"
+            android:layout_above="@+id/btn_zakShet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_ed"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Итого:"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="1000 тг"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_zakShet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:text="@string/zakrit_shet"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_16ssp"
+            android:background="@drawable/rounded_bg"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/board"
+    tools:context=".SmenitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Личные данные"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17ssp"
+            android:background="@drawable/rounded_bg_red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Смена пароля"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <EditText
+        android:id="@+id/text_starii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_4sdp"
+        android:hint="dauren_otarbay"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="#000000"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="@dimen/_17ssp"
+        android:background="@drawable/rounded_ed"/>
+    <EditText
+        android:id="@+id/text_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_4sdp"
+        android:hint="dauren_otarbay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="#000000"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="@dimen/_17ssp"
+        android:background="@drawable/rounded_ed"/>
+    <EditText
+        android:id="@+id/text_new2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_4sdp"
+        android:hint="dauren_otarbay"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="#000000"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="@dimen/_17ssp"
+        android:background="@drawable/rounded_ed"/>
+
+    <Button
+        android:id="@+id/btn_smn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="@string/sohranit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/rounded_bg"/>
+</LinearLayout>

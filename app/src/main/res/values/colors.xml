@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0249</color>
+    <color name="colorPrimaryDark">#FF0249</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="colorTransparent">#43000000</color>
+    <color name="redTransparent">#4F1321</color>
+
+    <color name="background">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whiter">#7effffff</color>
+    <color name="black">#000000</color>
+    <color name="action_color">#26ceca</color>
+    <color name="action_press">#1caca9</color>
+    <color name="price_color">#FFFFFF</color>
+    <color name="gray">#919191</color>
+    <color name="grayer">#d4d4d4</color>
+    <color name="menu_no">#802b2c5a</color>
+    <color name="menu">#FF0249</color>
+    <color name="yellow">#f4de1a</color>
+    <color name="orange">#ef8d2a</color>
+
+    <!-- Crop Image -->
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="primary_text_default_material_dark">#000000</color>
+    <color name="primary_text_material_dark">#020202</color>
+    <color name="secondary_text_material_dark">#000000</color>
+    <color name="foreground_material_dark">#000000</color>
+    <color name="primary_text_material_light">#000000</color>
+    <color name="secondary_text_material_light">#040404</color>
+</resources>

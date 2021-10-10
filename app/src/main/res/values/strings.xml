@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">ClientUp</string>
+    <string name="menu1">Послед заказ</string>
+    <string name="menu2">Рабочий</string>
+    <string name="menu3">Общий доход</string>
+
+    <string name="menu4">Общий расход</string>
+    <string name="profil">Профиль</string>
+    <string name="nomer">Номер телефона</string>
+    <string name="login">Логин...</string>
+    <string name="parol">Введите пароль</string>
+    <string name="parol1">Пароль...</string>
+    <string name="voiti">Войти</string>
+    <string name="zabili">Забыли пароль?</string>
+    <string name="netaccount">НЕТ АККАУНТА?</string>
+    <string name="zaredistr">Зарегистрироваться</string>
+    <string name="back">Назад</string>
+    <string name="vostanovit">Введите номер телефона для \nвосстановления пароля</string>
+    <string name="next">Далее</string>
+    <string name="vspom">Я ВСПОМНИЛ ПАРОЛЬ</string>
+    <string name="vcod">Введите код</string>
+    <string name="otcodpov">ОТПРАВИТЬ КОД ПОВТОРНО</string>
+    <string name="newpassowrd">Новый пароль</string>
+    <string name="thinkpassowrd">Придумайте новый пароль</string>
+    <string name="povpar">Повторите пароль</string>
+    <string name="registr">РЕГИСТРАЦИЯ</string>
+    <string name="otpravit">Отправить</string>
+    <string name="otpravit_zakaz">Отправить заказ</string>
+    <string name="zakrit_shet">Закрыть счет</string>
+    <string name="adminstator">Администратор</string>
+    <string name="menu">Меню</string>
+    <string name="rabotnik">Работники</string>
+    <string name="otmena">Отмена</string>
+    <string name="viti">Выйти</string>
+    <string name="sohranit">Сохранить</string>
+    <string name="hotite_viti_iz_akkaunta">Хотите выйти из аккаунта?</string>
+    <string name="hotite_vse">Хотите все удалить?</string>
+    <string name="nothingshet">Вы еще ничего не заказали</string>
+
+    <string name="proscan">Просканируйте QR код в ресторане\nчто бы сделать ваш заказ</string>
+
+    <string name="podozhdite">Подождите, администратор получил
+запрос на закрытие счета
+скоро вам принесут чек</string>
+
+    <!-- Crop Image content -->
+    <string name="crop__saving">Изображение сохраняется…</string>
+    <string name="crop__wait">Пожалуйста, подождите…</string>
+    <string name="crop__pick_error">Нет доступных изображений</string>
+    <string name="crop__done">ГОТОВО</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">ОТМЕНА</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="songi">Соңғы тапсырыстар</string>
+</resources>

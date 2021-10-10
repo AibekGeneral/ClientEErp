@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0249">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="3dp">
+        <ImageButton
+            android:id="@+id/bacck"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_left_black" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/suret"
+        android:layout_below="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:src="@mipmap/uppro"/>
+
+    <EditText
+        android:layout_below="@+id/suret"
+        android:id="@+id/edit_vhName1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Ваше имя..."
+        android:padding="10dp"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+    <EditText
+        android:layout_below="@+id/edit_vhName1"
+        android:id="@+id/edit_vhLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Ваш логин..."
+        android:padding="10dp"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+    <EditText
+        android:layout_below="@+id/edit_vhLogin1"
+        android:id="@+id/edit_vhPochta1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Ваш почта..."
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+    <EditText
+        android:layout_below="@+id/edit_vhPochta1"
+        android:id="@+id/edit_vhTel1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Ваш телефон..."
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+
+    <EditText
+        android:layout_below="@+id/edit_vhTel1"
+        android:id="@+id/edit_vhParol1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Ваш пароль..."
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+
+    <Button
+        android:layout_below="@+id/edit_vhParol1"
+        android:id="@+id/btn_vhVoiti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Зарегистроваться"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:background="@drawable/rounded_bg_white"/>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уже есть аккаунт?"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/text_vhZaregistr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voiti"
+            android:layout_marginLeft="4dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

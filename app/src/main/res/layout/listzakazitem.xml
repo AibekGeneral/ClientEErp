@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        android:id="@+id/cardView_menu">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/my_image"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_ed"/>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_toRightOf="@+id/my_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_name"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Яблочный сок"
+                    android:layout_marginTop="1dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toRightOf="@+id/my_image"
+                android:layout_below="@+id/lay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_price"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="300 тг - 1 стакан"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/lay2"
+                android:layout_toRightOf="@id/my_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:id="@+id/btn_sani"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:text="5"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/rounded_bg"
+                    android:layout_marginLeft="3dp"
+                    />
+
+<!--                <Button-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:id="@+id/kosu_kor"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginRight="@dimen/_5sdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="@dimen/_17ssp"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:text="+"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+<!--                    android:background="@drawable/button_cart_round_background_gradient" />-->
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

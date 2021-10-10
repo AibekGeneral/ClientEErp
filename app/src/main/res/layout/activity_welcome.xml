@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0249">
+
+    <ImageView
+        android:id="@+id/suret"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:src="@mipmap/uppro"/>
+
+    <EditText
+        android:layout_below="@+id/suret"
+        android:id="@+id/edit_vhNomer1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/login"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:layout_below="@+id/edit_vhNomer1"
+        android:id="@+id/edit_vhParol1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/parol1"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+
+    <Button
+        android:layout_below="@id/edit_vhParol1"
+        android:id="@+id/btn_vhVoiti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/voiti"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:background="@drawable/rounded_bg_white"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_vhVoiti1"
+        android:id="@+id/text_vhZabil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zabili"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/text_vhZaregistr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zaredistr"
+        android:layout_marginLeft="4dp"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0249">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="3dp">
+        <ImageButton
+            android:id="@+id/bacck"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_keyboard_arrow_left_black" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/rel1"
+        android:id="@+id/suret"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:src="@mipmap/uppro"/>
+
+    <EditText
+        android:layout_below="@+id/suret"
+        android:backgroundTint="@color/white"
+        android:id="@+id/edit_vhPochta"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:hint="Введите почту..."
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
+
+
+    <Button
+        android:layout_below="@+id/edit_vhPochta"
+        android:id="@+id/btn_vhPochta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:textAllCaps="false"
+        android:text="@string/otpravit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:background="@drawable/rounded_bg_white"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="#D1F8F8F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hotite_viti_iz_akkaunta"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textSize="17sp"
+        android:id="@+id/change_img"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viti"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/viti_profile"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_bg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/otmena"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/otmena_profile"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/transparent"/>
+
+
+
+
+</LinearLayout>

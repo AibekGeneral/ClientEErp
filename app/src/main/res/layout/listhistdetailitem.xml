@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp"
+        android:id="@+id/cardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/my_image"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_ed"/>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_toRightOf="@+id/my_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/my_name"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Яблочный сок"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_price"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:text="300 тг - 1 стакан"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

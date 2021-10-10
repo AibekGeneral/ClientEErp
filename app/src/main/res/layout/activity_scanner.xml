@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:id="@+id/menu_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:gravity="center_vertical">-->
+
+<!--        <View-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:background="#FFFFFF" />-->
+
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:background="@color/gray" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/div">
+
+
+<!--        <FrameLayout-->
+<!--            android:id="@+id/content_frame"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" >-->
+
+
+<!--        </FrameLayout>-->
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/scanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:borderColor="@color/colorPrimary"
+            app:borderWidth="@dimen/_3sdp"
+            app:cornerRadius="@dimen/_5sdp"
+            app:squaredFinder="true"
+            />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textScan"
+            android:text="Наведите камеру на QR "
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_105sdp"
+            android:textSize="@dimen/_13ssp">
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/bacckk"
+            android:src="@drawable/ic_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_25sdp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

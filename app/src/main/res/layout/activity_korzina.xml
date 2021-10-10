@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/board">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_nazKor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black"
+            android:gravity="center"
+            android:text="Ваш заказ"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_17ssp"
+            android:background="@drawable/rounded_bg_red"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_marginTop="3dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/udalit_kor"
+                android:layout_width="@dimen/_43sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@color/transparent"
+                android:src="@mipmap/deleteicon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/korinbei"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/meal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш заказ пуст"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/_24ssp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:text="Сделайте ваш заказ и вы сделайте\nнас счастливым"
+            android:textColor="@color/gray"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relll">
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"> -->
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/schet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:divider="@null"
+                android:dividerHeight="2dp"
+                android:id="@+id/list_kor"/>
+            <!--
+        </LinearLayout>  -->
+
+    <RelativeLayout
+        android:id="@+id/schet"
+        android:layout_above="@+id/btn_otpKor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_ed"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Итого:"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="1000 тг"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_otpKor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textAllCaps="false"
+        android:text="@string/otpravit_zakaz"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/rounded_bg"/>
+    </RelativeLayout>
+
+</LinearLayout>
